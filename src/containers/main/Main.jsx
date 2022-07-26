@@ -1,12 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import "./main.css"
+import Search from './../../components/Search';
 
 const Main = ({routes}) => {
   
   
   return (
-    <div>
+    <div className='main'>
+      
     
        <Routes>
             {routes.map((route, index) => (

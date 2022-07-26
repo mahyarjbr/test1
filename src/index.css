@@ -41,6 +41,8 @@ body{
 }
 
 
+
+
 .wrapper{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -69,5 +71,6 @@ li{
 
 
 :root{
-    --clr-blue:#0d98ba
+    --clr-blue:#0d98ba;
+    --clr-orange:#f3894d;
 }

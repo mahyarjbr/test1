@@ -6,6 +6,12 @@ import {
     BrowserRouter as Router,
    
   } from "react-router-dom";
+import Search from './components/Search';
+import Ticket from './components/Ticket';
+import Agents from './components/Agents';
+import Profile from './components/Profile';
+import SavedHouse from './components/SavedHouse';
+import RecentSearch from './components/RecentSearch';
 
 const App = () => {
     const routes = [
@@ -13,36 +19,42 @@ const App = () => {
           path: "/",
           exact: true,
           sidebar: "جستجو",
-          main: () => <h2>جستجو</h2>,
-          icon:faSearch
+          main: () => <Search />,
+          icon:faSearch,
+          classname:"header_item"
         },
         {
           path: "/ticket",
           sidebar: "آگهی های من",
-          main: () => <h2>صفحه مربوط به آگهی های من</h2>,
-          icon:faFile
+          main: () => <Ticket />,
+          icon:faFile,
+          classname:"header_item"
         },
         {
           path: "/agents",
           sidebar: "نماینده ها",
-          main: () => <h2>صفحه مربوط به نماینده ها</h2>,
-          icon:faUserGroup
+          main: () => <Agents />,
+          icon:faUserGroup,
+          classname:"header_item"
         },
         {
             path: "/profile",
             sidebar: "پروفایل",
-            main: () => <h2>صفحه مربوط به پروفایل </h2>,
-            icon:faUserCheck
+            main: () => <Profile />,
+            icon:faUserCheck,
+            classname:"header_item"
           }, {
             path: "/saved-house",
             sidebar: "ملک های ذخیره شده",
-            main: () => <h2>صفحه مربوط به ملک ها ذخیره شده</h2>,
-            icon:faBookmark
+            main: () => <SavedHouse />,
+            icon:faBookmark,
+            classname:"header_item hide"
           }, {
             path: "/recent-search",
             sidebar: "جستجو های اخیر",
-            main: () => <h2>صفحه مربوط به جستجو های اخیر</h2>,
-            icon:faSearch
+            main: () => <RecentSearch />,
+            icon:faSearch,
+            classname:"header_item hide"
           }]
    
     return (
