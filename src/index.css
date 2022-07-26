@@ -4,3 +4,53 @@
     margin: 0;
 }
 
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+}
+
