@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    direction: rtl;
+}
 
 .container {
     width: 100%;
@@ -41,6 +44,7 @@
 .wrapper{
     display: grid;
     grid-template-columns: 20% 80%;
+    height: 100vh;
 
 
 }
@@ -54,3 +58,16 @@
     }
 }
 
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+:root{
+    --clr-blue:#0d98ba
+}
